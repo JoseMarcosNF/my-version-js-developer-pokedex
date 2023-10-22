@@ -1,0 +1,184 @@
+
+
+
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+.fire {
+    background-color: #ee7f30;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
+
+
+.back{
+    max-width: 10%;
+    max-height: 10%;
+
+}
+
+.session1{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+}
+
+.above {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+}
+
+.above .idName{
+    padding: 0;
+    margin: 0.2rem;
+    list-style: none;
+    flex-direction: row;
+}
+.above .idName .number {
+    color: #000;
+    text-align: right;
+    font-size: 20px;
+}
+
+.above .idName .name {
+    
+    text-align: left;
+    color: #000000;
+    display:inline;
+}
+.imgContent{
+
+    width: 100%;
+    background-color: #000;
+}
+.imgContent img {
+    margin-top: 30px;
+    max-width: 100%;
+    height: 250px;
+    background-color: #000;
+}
+
+
+.above .types {
+    padding: 0;
+    margin: 0.2rem;
+    list-style: none;
+    flex-direction: row;
+}
+
+.above .types .type {
+    color: #fff;
+    padding: .30rem .8rem;
+    margin: .25rem 0;
+    font-size: 1rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+    display:inline;
+    list-style: none;
+}
+.session2 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    
+}
+
+.session2 .stats {
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
