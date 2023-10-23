@@ -67,17 +67,20 @@ let varUrl = window.location.href;
         let photo = pokemonData.sprites.other.dream_world.front_default;
 
         return `
+
         <ol class = "idName">
-            <li class="number">${id}</li>
-            <li class="name"><h1>${name}</h1></li>
+            <li class="name"><h1 class="h1Name">${name}</h1></li>
+            <li class="number"># ${id}</li>
         </ol>
        
         <ol id="types" class="types">
            
         </ol>
-        <div class"imgContent">
-            <img src="${photo}" alt="imagem"> 
-        </div>`
+        <ol class="imgContent">
+            <li class="liImg">
+                <img src="${photo}" alt="imagem"> 
+            </li>
+        </ol>`
     }
    
    function pokeTypes(pokemonData){
@@ -140,8 +143,8 @@ function pokemonStats(pokemonData){
           // Concatene as partes dinâmicas na variável result
     result += `
     <ol class="types">
-      <li class="type">${ability}</li>
-      <li class="type">${value}</li>
+      <li class="typeLabel">${ability}</li>
+      <li class="typeContent">${value}</li>
     </ol>`;
     
 })

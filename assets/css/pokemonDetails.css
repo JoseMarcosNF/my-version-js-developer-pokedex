@@ -81,51 +81,56 @@
 }
 
 .session1{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
 }
 
-.above {
+.session1 .above {
+    
     display: grid;
-    grid-template-columns: 1fr;
     margin: 0;
     padding: 0;
     list-style: none;
     flex-direction: column;
+     align-items: center;
+    justify-content: center;
 }
 
-.above .idName{
+.session1 .above .idName{
+    text-transform: uppercase;
+    display: flex;
     padding: 0;
-    margin: 0.2rem;
+    margin-bottom: 25px;
     list-style: none;
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    width: 100%;
 }
 .above .idName .number {
     color: #000;
-    text-align: right;
+    text-align: center;
     font-size: 20px;
+    display:inline; 
+    width: 50%;
 }
 
-.above .idName .name {
+.above .idName .name .h1Name{
     
-    text-align: left;
+    text-align: center;
     color: #000000;
+    justify-content: center;
     display:inline;
+    width: 50%;
+    
 }
-.imgContent{
-
-    width: 100%;
-    background-color: #000;
-}
-.imgContent img {
+.imgContent .liImg{
+    list-style: none;
+    justify-content: center;
     margin-top: 30px;
-    max-width: 100%;
-    height: 250px;
-    background-color: #000;
 }
 
 
@@ -147,11 +152,15 @@
     display:inline;
     list-style: none;
 }
+/*container de baixo*/
 .session2 {
+
     display: flex;
     flex-direction: column;
     list-style: none;
-    
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .session2 .stats {
@@ -161,6 +170,27 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    width: 100%;
+}
+
+.session2 .stats .types {
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+}
+
+.session2 .stats .types .typeLabel {
+    text-transform: uppercase;
+    list-style: none;
+    justify-content: left;
+    display:inline;
+    width: 50%;
+}
+.session2 .stats .types .typeContent {
+    list-style: none;
+    text-align: center;
+    display:inline; 
+    width: 50%;
 }
 
 

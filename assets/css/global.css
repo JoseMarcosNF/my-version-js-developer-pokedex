@@ -5,13 +5,14 @@
 
 body {
     background-color: #f6f8fc;
+    margin: 0;
+    padding: 0;
 }
 
 .content {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 10%;
-    background-color: #fff;
     align-items: center;
     align-content: center;
 }
